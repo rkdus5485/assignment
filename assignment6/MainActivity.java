@@ -19,6 +19,6 @@ public class MainActivity extends AppCompatActivity {
         WebSettings myWebSettings = myWebView.getSettings();
         myWebSettings.setJavaScriptEnabled(true);
 
-        myWebView.loadUrl("http://github.com/rkdus5485");
+        myWebView.loadUrl("https://github.com/rkdus5485/assignment");
     }
 }
