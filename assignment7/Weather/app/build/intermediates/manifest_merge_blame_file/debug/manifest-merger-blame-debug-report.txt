@@ -1,0 +1,97 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.weather"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+8-->C:\Users\LG\AndroidStudioProjects\Weather\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->C:\Users\LG\AndroidStudioProjects\Weather\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Users\LG\AndroidStudioProjects\Weather\app\src\main\AndroidManifest.xml:5:5-66
+11-->C:\Users\LG\AndroidStudioProjects\Weather\app\src\main\AndroidManifest.xml:5:22-64
+12
+13    <application
+13-->C:\Users\LG\AndroidStudioProjects\Weather\app\src\main\AndroidManifest.xml:7:5-46:19
+14        android:allowBackup="true"
+14-->C:\Users\LG\AndroidStudioProjects\Weather\app\src\main\AndroidManifest.xml:8:9-35
+15        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+15-->[com.android.support:support-compat:28.0.0] C:\Users\LG\.gradle\caches\transforms-2\files-2.1\f1491a81a65d4033a56d6549564e765e\support-compat-28.0.0\AndroidManifest.xml:22:18-91
+16        android:debuggable="true"
+17        android:icon="@mipmap/ic_launcher"
+17-->C:\Users\LG\AndroidStudioProjects\Weather\app\src\main\AndroidManifest.xml:9:9-43
+18        android:label="@string/app_name"
+18-->C:\Users\LG\AndroidStudioProjects\Weather\app\src\main\AndroidManifest.xml:10:9-41
+19        android:roundIcon="@mipmap/ic_launcher_round"
+19-->C:\Users\LG\AndroidStudioProjects\Weather\app\src\main\AndroidManifest.xml:11:9-54
+20        android:supportsRtl="true"
+20-->C:\Users\LG\AndroidStudioProjects\Weather\app\src\main\AndroidManifest.xml:12:9-35
+21        android:testOnly="true"
+22        android:theme="@style/AppTheme" >
+22-->C:\Users\LG\AndroidStudioProjects\Weather\app\src\main\AndroidManifest.xml:13:9-40
+23        <meta-data
+23-->C:\Users\LG\AndroidStudioProjects\Weather\app\src\main\AndroidManifest.xml:14:9-16:52
+24            android:name="com.google.android.actions"
+24-->C:\Users\LG\AndroidStudioProjects\Weather\app\src\main\AndroidManifest.xml:15:13-54
+25            android:resource="@xml/pref_general" />
+25-->C:\Users\LG\AndroidStudioProjects\Weather\app\src\main\AndroidManifest.xml:16:13-49
+26
+27        <activity
+27-->C:\Users\LG\AndroidStudioProjects\Weather\app\src\main\AndroidManifest.xml:18:9-26:20
+28            android:name="com.example.weather.SettingsActivity"
+28-->C:\Users\LG\AndroidStudioProjects\Weather\app\src\main\AndroidManifest.xml:18:19-51
+29            android:label="@string/action_settings"
+29-->C:\Users\LG\AndroidStudioProjects\Weather\app\src\main\AndroidManifest.xml:19:13-52
+30            android:parentActivityName="com.example.weather.MainActivity" >
+30-->C:\Users\LG\AndroidStudioProjects\Weather\app\src\main\AndroidManifest.xml:20:13-55
+31            <meta-data
+31-->C:\Users\LG\AndroidStudioProjects\Weather\app\src\main\AndroidManifest.xml:22:13-24:67
+32                android:name="android.support.PARENT-ACTIVITY"
+32-->C:\Users\LG\AndroidStudioProjects\Weather\app\src\main\AndroidManifest.xml:23:17-63
+33                android:value="com.example.weather.Mainactivity" />
+33-->C:\Users\LG\AndroidStudioProjects\Weather\app\src\main\AndroidManifest.xml:24:17-65
+34        </activity>
+35
+36        <service
+36-->C:\Users\LG\AndroidStudioProjects\Weather\app\src\main\AndroidManifest.xml:28:9-31:39
+37            android:name="com.example.weather.FetchWeatherService"
+37-->C:\Users\LG\AndroidStudioProjects\Weather\app\src\main\AndroidManifest.xml:29:13-48
+38            android:enabled="true"
+38-->C:\Users\LG\AndroidStudioProjects\Weather\app\src\main\AndroidManifest.xml:30:13-35
+39            android:exported="true" />
+39-->C:\Users\LG\AndroidStudioProjects\Weather\app\src\main\AndroidManifest.xml:31:13-36
+40
+41        <activity android:name="com.example.weather.DetailActivity" />
+41-->C:\Users\LG\AndroidStudioProjects\Weather\app\src\main\AndroidManifest.xml:33:9-52
+41-->C:\Users\LG\AndroidStudioProjects\Weather\app\src\main\AndroidManifest.xml:33:19-49
+42        <activity android:name="com.example.weather.MainActivity" >
+42-->C:\Users\LG\AndroidStudioProjects\Weather\app\src\main\AndroidManifest.xml:34:9-40:20
+42-->C:\Users\LG\AndroidStudioProjects\Weather\app\src\main\AndroidManifest.xml:34:19-47
+43            <intent-filter>
+43-->C:\Users\LG\AndroidStudioProjects\Weather\app\src\main\AndroidManifest.xml:35:13-39:29
+44                <action android:name="android.intent.action.MAIN" />
+44-->C:\Users\LG\AndroidStudioProjects\Weather\app\src\main\AndroidManifest.xml:36:17-69
+44-->C:\Users\LG\AndroidStudioProjects\Weather\app\src\main\AndroidManifest.xml:36:25-66
+45
+46                <category android:name="android.intent.category.LAUNCHER" />
+46-->C:\Users\LG\AndroidStudioProjects\Weather\app\src\main\AndroidManifest.xml:38:17-77
+46-->C:\Users\LG\AndroidStudioProjects\Weather\app\src\main\AndroidManifest.xml:38:27-74
+47            </intent-filter>
+48        </activity>
+49
+50        <provider
+50-->C:\Users\LG\AndroidStudioProjects\Weather\app\src\main\AndroidManifest.xml:41:9-45:38
+51            android:name="com.example.weather.provider.WeatherProvider"
+51-->C:\Users\LG\AndroidStudioProjects\Weather\app\src\main\AndroidManifest.xml:43:13-72
+52            android:authorities="com.example.weather"
+52-->C:\Users\LG\AndroidStudioProjects\Weather\app\src\main\AndroidManifest.xml:42:13-54
+53            android:enabled="true"
+53-->C:\Users\LG\AndroidStudioProjects\Weather\app\src\main\AndroidManifest.xml:44:13-35
+54            android:exported="true" />
+54-->C:\Users\LG\AndroidStudioProjects\Weather\app\src\main\AndroidManifest.xml:45:13-36
+55    </application>
+56
+57</manifest>
